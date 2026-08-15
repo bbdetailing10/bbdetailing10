@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BB Detailing — local car detailing by young entrepreneurs, family supported. Clean cars. Done right." />
+  <meta name="theme-color" content="#05070a" />
+  <title>BB Detailing | Clean Cars. Done Right.</title>
+  <link rel="icon" href="bb-badge.jpg" />
+  <style>
+    :root{
+      --bg:#05070a; --panel:#0b0f15; --panel2:#111720; --line:#263142;
+      --text:#f7f9fc; --muted:#aab3c0; --blue:#0a6cff; --blue2:#3f91ff;
+      --silver:#dfe5ec; --good:#79b8ff; --shadow:0 18px 60px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 75% 0%,rgba(10,108,255,.12),transparent 32%),var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+    .wrap{max-width:1160px;margin:auto;padding:0 22px}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(5,7,10,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+    .nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:.08em}.brand-mark{width:42px;height:42px;border-radius:50%;object-fit:cover;border:1px solid #2c6cff}.brand span{color:var(--blue2)}
+    .navlinks{display:flex;gap:22px;align-items:center;font-size:14px;color:#d9e0ea}.navlinks a:hover{color:white}.nav-cta{padding:10px 14px;border-radius:10px;background:var(--blue);font-weight:800;color:white}
+    .hero{min-height:690px;display:grid;align-items:center;padding:72px 0 54px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(63,145,255,.45);border-radius:999px;color:#9cc7ff;font-size:12px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;background:rgba(10,108,255,.08)}
+    h1{font-size:clamp(52px,7.5vw,88px);line-height:.95;letter-spacing:-.05em;margin:20px 0 22px;max-width:760px}.blue{color:var(--blue2)}
+    .hero p{max-width:650px;font-size:19px;color:var(--muted);margin:0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:11px;font-weight:850;border:1px solid #2d394a;transition:.2s ease}.btn:hover{transform:translateY(-1px)}.btn-primary{background:linear-gradient(135deg,var(--blue),#004fce);border-color:#1676ff}.btn-secondary{background:#0d131c}
+    .hero-card{position:relative;background:linear-gradient(180deg,rgba(17,23,32,.95),rgba(5,7,10,.92));border:1px solid #233147;border-radius:26px;padding:22px;box-shadow:var(--shadow)}.hero-card:before{content:"";position:absolute;inset:-1px;border-radius:26px;background:linear-gradient(135deg,rgba(67,145,255,.35),transparent 30%);z-index:-1}.hero-logo{border-radius:18px;background:#000;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+    .trustbar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.trust{padding:13px 12px;border:1px solid #1f2c3e;border-radius:12px;background:#090d13;text-align:center}.trust b{display:block;font-size:14px}.trust small{color:#8895a7}
+    section{padding:82px 0}.section-head{max-width:700px;margin-bottom:34px}.section-kicker{color:#72aaff;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.section-head h2{font-size:clamp(34px,5vw,50px);line-height:1.03;margin:8px 0 12px;letter-spacing:-.035em}.section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{position:relative;background:linear-gradient(180deg,#0f151f,#0a0e14);border:1px solid #222e3e;border-radius:20px;padding:26px;box-shadow:0 10px 35px rgba(0,0,0,.22)}.card.featured{border-color:#176fff;box-shadow:0 12px 44px rgba(10,108,255,.14)}.pill{display:inline-block;padding:5px 9px;border-radius:999px;background:#0c63ed;color:#fff;font-size:11px;font-weight:900;letter-spacing:.07em}.card h3{font-size:25px;margin:14px 0 5px}.price{font-size:44px;line-height:1;font-weight:950;letter-spacing:-.04em;margin:11px 0}.time{color:#84b8ff;font-weight:800;font-size:14px}.fit{color:#c8d1dd;margin:14px 0 6px;font-weight:750}.card ul{padding-left:18px;color:#aeb8c6}.card li{margin:7px 0}.fine{font-size:12px;color:#7f8a99;margin-top:16px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:22px;border-radius:16px;border:1px solid #212c3c;background:#0b1017}.num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#0a6cff;font-weight:900;margin-bottom:13px}.step h3{margin:0 0 5px}.step p{margin:0;color:#9ba7b7;font-size:14px}
+    .band{background:linear-gradient(135deg,rgba(10,108,255,.14),rgba(255,255,255,.02));border-block:1px solid #1d2a3d}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.panel{background:#0c1119;border:1px solid #222e40;border-radius:18px;padding:25px}.panel h3{margin-top:0}.panel p,.panel li{color:#aab4c3}.rules{list-style:none;padding:0;margin:14px 0 0}.rules li{padding:10px 0;border-top:1px solid #1d2735}.rules strong{color:#f6f8fb}
+    .story{display:grid;grid-template-columns:.75fr 1.25fr;gap:30px;align-items:center}.story-badge{max-width:340px;margin:auto;border-radius:50%;box-shadow:0 0 70px rgba(10,108,255,.18)}.story-copy h2{font-size:42px;line-height:1.05;margin:8px 0 14px}.story-copy p{color:#aab4c1}
+    .booking{background:#070b11}.form-shell{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px}.booking-info{padding:28px;border:1px solid #213047;background:linear-gradient(180deg,#0e151f,#091018);border-radius:20px}.booking-info h3{font-size:30px;margin:0 0 8px}.booking-info p{color:#9aa8bb}.booking-info .mini{margin-top:20px;padding-top:18px;border-top:1px solid #203047}.booking-info a{color:#80b6ff;font-weight:800}
+    form{padding:28px;border:1px solid #253246;border-radius:20px;background:#0d121a}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-size:13px;font-weight:800;color:#cbd4df;margin:13px 0 6px}input,select,textarea{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #2d394a;background:#070b11;color:white;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:#1676ff;box-shadow:0 0 0 3px rgba(22,118,255,.1)}textarea{min-height:105px;resize:vertical}.submit{width:100%;margin-top:18px;cursor:pointer}.status{display:none;margin-top:14px;padding:13px;border-radius:10px;background:#0c1930;border:1px solid #1b67c9;color:#cbe3ff}
+    footer{padding:40px 0;border-top:1px solid #172130;color:#7f8a99}.footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{font-weight:950;color:#e7ecf2}.footer-brand span{color:var(--blue2)}
+    @media(max-width:900px){.hero-grid,.two-col,.story,.form-shell{grid-template-columns:1fr}.hero{padding-top:48px}.hero-card{max-width:620px}.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.story-badge{max-width:260px}.navlinks a:not(.nav-cta){display:none}}
+    @media(max-width:580px){.wrap{padding:0 16px}.hero{min-height:auto;padding:38px 0 50px}h1{font-size:49px}.hero p{font-size:17px}.trustbar,.steps,.row{grid-template-columns:1fr}.section-head h2{font-size:36px}.nav-inner{height:64px}.brand{font-size:14px}.brand-mark{width:36px;height:36px}.footer-grid{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand"><img class="brand-mark" src="bb-badge.jpg" alt="BB Detailing badge"><div>BB <span>DETAILING</span></div></a>
+      <div class="navlinks">
+        <a href="#services">Services</a><a href="#how">How It Works</a><a href="#about">About</a><a class="nav-cta" href="#booking">Book a Detail</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Local • Family Supported • Young Entrepreneurs</div>
+          <h1>Clean cars.<br><span class="blue">Done right.</span></h1>
+          <p>Quality car detailing by young local entrepreneurs who are learning what it takes to build something of their own — with family support, fair pricing, and pride in every vehicle.</p>
+          <div class="actions"><a class="btn btn-primary" href="#booking">Book Your Detail</a><a class="btn btn-secondary" href="#services">See Packages</a></div>
+        </div>
+        <div class="hero-card">
+          <img class="hero-logo" src="bb-logo-hero.jpg" alt="BB Detailing — Clean Cars. Done Right.">
+          <div class="trustbar"><div class="trust"><b>Fair Pricing</b><small>No surprises</small></div><div class="trust"><b>Scheduled Drop-Off</b><small>Clear timing</small></div><div class="trust"><b>Mobile by Referral</b><small>Trusted network</small></div></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head"><div class="section-kicker">Detail Packages</div><h2>Choose the clean your car actually needs.</h2><p>These packages are designed around vehicle condition and the time required to do the job properly. If a vehicle needs more work than expected, we’ll discuss it before anything changes.</p></div>
+        <div class="cards">
+          <article class="card">
+            <span class="pill">LIGHT REFRESH</span><h3>Fresh Start</h3><div class="price">$60</div><div class="time">Approx. 60–90 minutes</div><div class="fit">Best for:</div><p>Vehicles that are already in decent shape and need a solid tidy-up.</p>
+            <ul><li>Exterior hand wash</li><li>Interior vacuum</li><li>Dash, console & door wipe-down</li><li>Floor mats & interior windows</li><li>Wheels & tires</li></ul>
+            <div class="fine">Heavy stains, salt buildup or significant pet hair may require a higher package.</div>
+          </article>
+          <article class="card featured">
+            <span class="pill">MOST POPULAR</span><h3>Superior</h3><div class="price">$80</div><div class="time">Approx. 90–150 minutes</div><div class="fit">Best for:</div><p>Everyday vehicles that need more than a quick clean and would benefit from deeper attention.</p>
+            <ul><li>Everything in Fresh Start</li><li>Deeper interior surface cleaning</li><li>Spot stain treatment</li><li>Extra attention to carpets & mats</li><li>Detailed finishing touches</li></ul>
+            <div class="fine">We’ll confirm condition and expected timing before starting.</div>
+          </article>
+          <article class="card">
+            <span class="pill">HEAVY CLEAN</span><h3>Complete Restoration</h3><div class="price">$100+</div><div class="time">Approx. 2.5–4+ hours</div><div class="fit">Best for:</div><p>Vehicles with significant dirt, winter buildup, stains or pet hair that need real time and effort.</p>
+            <ul><li>Everything in Superior</li><li>Salt stain treatment</li><li>Pet hair removal</li><li>Deep stain work</li><li>Extended carpet & interior cleaning</li></ul>
+            <div class="fine">Final price and timing depend on vehicle size and condition. We’ll always talk with you first.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="band">
+      <div class="wrap">
+        <div class="section-head"><div class="section-kicker">How It Works</div><h2>Simple booking. Clear expectations.</h2></div>
+        <div class="steps"><div class="step"><div class="num">1</div><h3>Pick a package</h3><p>Choose the service that best matches your vehicle’s condition.</p></div><div class="step"><div class="num">2</div><h3>Request a time</h3><p>Choose your preferred date and tell us a little about the vehicle.</p></div><div class="step"><div class="num">3</div><h3>Get confirmed</h3><p>We confirm the appointment, estimated completion time and drop-off details.</p></div><div class="step"><div class="num">4</div><h3>Pick it up clean</h3><p>We’ll let you know when your vehicle is ready. Payment is due at pickup.</p></div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap two-col">
+        <div class="panel"><div class="section-kicker">Drop-Off</div><h3>Scheduled home drop-off</h3><p>Most appointments are completed as scheduled drop-offs. To protect family privacy and keep things organized, the exact drop-off location is provided only after the booking is confirmed.</p><ul class="rules"><li><strong>Arrival:</strong> Please arrive at your confirmed time.</li><li><strong>Completion:</strong> We provide an estimated pickup window.</li><li><strong>Changes:</strong> If the vehicle needs significantly more work, we contact you before continuing.</li></ul></div>
+        <div class="panel"><div class="section-kicker">Mobile Service</div><h3>Available through trusted referrals</h3><p>Mobile detailing is offered selectively to people we already know, returning customers, friends and family, or approved referrals. This keeps the service comfortable, safe and personal for everyone involved.</p><ul class="rules"><li><strong>Returning customers:</strong> Ask when booking.</li><li><strong>Friends & family:</strong> Mobile may be available.</li><li><strong>Approved referrals:</strong> We’ll confirm before scheduling.</li></ul></div>
+      </div>
+    </section>
+
+    <section id="about" class="band">
+      <div class="wrap story">
+        <img class="story-badge" src="bb-badge.jpg" alt="BB Detailing logo badge">
+        <div class="story-copy"><div class="section-kicker">Who We Are</div><h2>Young entrepreneurs. Real work. Family supported.</h2><p>BB Detailing started as a way for young entrepreneurs to learn how to build something of their own. That means showing up, communicating clearly, taking pride in the details, and earning every customer’s trust through the work.</p><p>Family support is there behind the scenes, but the goal is simple: give customers a great clean at a fair price while building confidence, responsibility and real-world business experience.</p><p><strong>Our standard:</strong> honest work, respectful service, fair value — and cars that leave looking a whole lot better than when they arrived.</p></div>
+      </div>
+    </section>
+
+    <section id="booking" class="booking">
+      <div class="wrap">
+        <div class="section-head"><div class="section-kicker">Booking</div><h2>Request your detailing appointment.</h2><p>Submit the form below. Your request isn’t final until BB Detailing confirms the date, time and service.</p></div>
+        <div class="form-shell">
+          <aside class="booking-info"><h3>Before you book</h3><p>Tell us the real condition of the vehicle. Pet hair, salt, stains and heavier messes take more time — and we want to price the job fairly without rushing the work.</p><div class="mini"><strong>Payment</strong><p>Cash or e-transfer accepted after service.</p><a href="mailto:bbdetailing10@gmail.com">bbdetailing10@gmail.com</a></div><div class="mini"><strong>Mobile service</strong><p>Returning customers, friends/family and approved referrals only.</p></div></aside>
+          <form id="bookingForm">
+            <div class="row"><div><label for="name">Name</label><input id="name" required autocomplete="name" placeholder="Your name"></div><div><label for="phone">Phone</label><input id="phone" type="tel" required autocomplete="tel" placeholder="(555) 555-5555"></div></div>
+            <div class="row"><div><label for="service">Package</label><select id="service" required><option value="">Choose one...</option><option>Fresh Start — $60</option><option>Superior — $80</option><option>Complete Restoration — $100+</option></select></div><div><label for="date">Preferred date</label><input id="date" type="date" required></div></div>
+            <div class="row"><div><label for="vehicle">Vehicle</label><input id="vehicle" required placeholder="2020 Honda Civic"></div><div><label for="method">Service preference</label><select id="method" required><option value="">Choose one...</option><option>Drop-off</option><option>Mobile — returning/referral only</option></select></div></div>
+            <label for="condition">Vehicle condition / anything we should know?</label><textarea id="condition" placeholder="Pet hair, salt stains, food spills, very dirty carpets, vehicle size, etc."></textarea>
+            <button class="btn btn-primary submit" type="submit">Prepare Booking Request</button>
+            <div id="status" class="status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-grid"><div><div class="footer-brand">BB <span>DETAILING</span></div><div>Clean Cars. Done Right.</div></div><div>Cash or e-transfer • Local drop-off • Mobile by referral</div></div></footer>
+
+  <script>
+    const dateInput=document.getElementById('date');
+    const today=new Date(); const y=today.getFullYear(); const m=String(today.getMonth()+1).padStart(2,'0'); const d=String(today.getDate()).padStart(2,'0');
+    dateInput.min=`${y}-${m}-${d}`;
+
+    document.getElementById('bookingForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      const data={
+        name:document.getElementById('name').value.trim(), phone:document.getElementById('phone').value.trim(),
+        service:document.getElementById('service').value, date:document.getElementById('date').value,
+        vehicle:document.getElementById('vehicle').value.trim(), method:document.getElementById('method').value,
+        condition:document.getElementById('condition').value.trim()
+      };
+      const body=[`Hi BB Detailing,`,``,`I'd like to request an appointment.`,``,`Name: ${data.name}`,`Phone: ${data.phone}`,`Package: ${data.service}`,`Preferred date: ${data.date}`,`Vehicle: ${data.vehicle}`,`Service preference: ${data.method}`,`Vehicle condition/notes: ${data.condition||'None provided'}`,``,`Please confirm availability, timing and final service level. Thanks!`].join('\n');
+      const subject=`Booking Request — ${data.name} — ${data.vehicle}`;
+      const mailto=`mailto:bbdetailing10@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const status=document.getElementById('status');
+      status.style.display='block'; status.innerHTML='Your request is ready. Your email app should open now. Send the prepared email to complete the request.';
+      window.location.href=mailto;
+    });
+  </script>
+</body>
+</html>
