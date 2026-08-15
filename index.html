@@ -32,10 +32,10 @@
     .band{background:linear-gradient(135deg,rgba(10,108,255,.14),rgba(255,255,255,.02));border-block:1px solid #1d2a3d}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.panel{background:#0c1119;border:1px solid #222e40;border-radius:18px;padding:25px}.panel h3{margin-top:0}.panel p,.panel li{color:#aab4c3}.rules{list-style:none;padding:0;margin:14px 0 0}.rules li{padding:10px 0;border-top:1px solid #1d2735}.rules strong{color:#f6f8fb}
     .story{display:grid;grid-template-columns:.75fr 1.25fr;gap:30px;align-items:center}.story-badge{max-width:340px;margin:auto;border-radius:50%;box-shadow:0 0 70px rgba(10,108,255,.18)}.story-copy h2{font-size:42px;line-height:1.05;margin:8px 0 14px}.story-copy p{color:#aab4c1}
     .booking{background:#070b11}.form-shell{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px}.booking-info{padding:28px;border:1px solid #213047;background:linear-gradient(180deg,#0e151f,#091018);border-radius:20px}.booking-info h3{font-size:30px;margin:0 0 8px}.booking-info p{color:#9aa8bb}.booking-info .mini{margin-top:20px;padding-top:18px;border-top:1px solid #203047}.booking-info a{color:#80b6ff;font-weight:800}
-    form{padding:28px;border:1px solid #253246;border-radius:20px;background:#0d121a}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-size:13px;font-weight:800;color:#cbd4df;margin:13px 0 6px}input,select,textarea{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #2d394a;background:#070b11;color:white;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:#1676ff;box-shadow:0 0 0 3px rgba(22,118,255,.1)}textarea{min-height:105px;resize:vertical}.submit{width:100%;margin-top:18px;cursor:pointer}.status{display:none;margin-top:14px;padding:13px;border-radius:10px;background:#0c1930;border:1px solid #1b67c9;color:#cbe3ff}
+    .calendar-card{padding:34px;border:1px solid #253246;border-radius:20px;background:linear-gradient(180deg,#0d121a,#09101a);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.calendar-icon{font-size:42px;line-height:1;margin-bottom:14px}.calendar-card h3{font-size:30px;margin:0 0 8px}.calendar-card>p{color:#9aa8bb;margin:0 0 22px}.calendar-btn{width:100%;margin-bottom:22px}.availability-note{width:100%;padding-top:18px;border-top:1px solid #203047}.availability-note p{color:#9aa8bb;margin:6px 0}.availability-note a{color:#80b6ff;font-weight:800}
     footer{padding:40px 0;border-top:1px solid #172130;color:#7f8a99}.footer-grid{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{font-weight:950;color:#e7ecf2}.footer-brand span{color:var(--blue2)}
     @media(max-width:900px){.hero-grid,.two-col,.story,.form-shell{grid-template-columns:1fr}.hero{padding-top:48px}.hero-card{max-width:620px}.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.story-badge{max-width:260px}.navlinks a:not(.nav-cta){display:none}}
-    @media(max-width:580px){.wrap{padding:0 16px}.hero{min-height:auto;padding:38px 0 50px}h1{font-size:49px}.hero p{font-size:17px}.trustbar,.steps,.row{grid-template-columns:1fr}.section-head h2{font-size:36px}.nav-inner{height:64px}.brand{font-size:14px}.brand-mark{width:36px;height:36px}.footer-grid{align-items:flex-start;flex-direction:column}}
+    @media(max-width:580px){.wrap{padding:0 16px}.hero{min-height:auto;padding:38px 0 50px}h1{font-size:49px}.hero p{font-size:17px}.trustbar,.steps{grid-template-columns:1fr}.section-head h2{font-size:36px}.nav-inner{height:64px}.brand{font-size:14px}.brand-mark{width:36px;height:36px}.footer-grid{align-items:flex-start;flex-direction:column}}
   </style>
 </head>
 <body>
@@ -43,7 +43,7 @@
     <div class="wrap nav-inner">
       <a href="#top" class="brand"><img class="brand-mark" src="bb-badge.jpg" alt="BB Detailing badge"><div>BB <span>DETAILING</span></div></a>
       <div class="navlinks">
-        <a href="#services">Services</a><a href="#how">How It Works</a><a href="#about">About</a><a class="nav-cta" href="#booking">Book a Detail</a>
+        <a href="#services">Services</a><a href="#how">How It Works</a><a href="#about">About</a><a class="nav-cta" href="https://calendar.app.google/mA8QHgoBSwWcLs3N9" target="_blank" rel="noopener">Book a Detail</a>
       </div>
     </div>
   </nav>
@@ -55,7 +55,7 @@
           <div class="eyebrow">Local • Family Supported • Young Entrepreneurs</div>
           <h1>Clean cars.<br><span class="blue">Done right.</span></h1>
           <p>Quality car detailing by young local entrepreneurs who are learning what it takes to build something of their own — with family support, fair pricing, and pride in every vehicle.</p>
-          <div class="actions"><a class="btn btn-primary" href="#booking">Book Your Detail</a><a class="btn btn-secondary" href="#services">See Packages</a></div>
+          <div class="actions"><a class="btn btn-primary" href="https://calendar.app.google/mA8QHgoBSwWcLs3N9" target="_blank" rel="noopener">Book Your Detail</a><a class="btn btn-secondary" href="#services">See Packages</a></div>
         </div>
         <div class="hero-card">
           <img class="hero-logo" src="bb-logo-hero.jpg" alt="BB Detailing — Clean Cars. Done Right.">
@@ -90,7 +90,7 @@
     <section id="how" class="band">
       <div class="wrap">
         <div class="section-head"><div class="section-kicker">How It Works</div><h2>Simple booking. Clear expectations.</h2></div>
-        <div class="steps"><div class="step"><div class="num">1</div><h3>Pick a package</h3><p>Choose the service that best matches your vehicle’s condition.</p></div><div class="step"><div class="num">2</div><h3>Request a time</h3><p>Choose your preferred date and tell us a little about the vehicle.</p></div><div class="step"><div class="num">3</div><h3>Get confirmed</h3><p>We confirm the appointment, estimated completion time and drop-off details.</p></div><div class="step"><div class="num">4</div><h3>Pick it up clean</h3><p>We’ll let you know when your vehicle is ready. Payment is due at pickup.</p></div></div>
+        <div class="steps"><div class="step"><div class="num">1</div><h3>Pick a package</h3><p>Choose the service that best matches your vehicle’s condition.</p></div><div class="step"><div class="num">2</div><h3>Choose an open time</h3><p>Use our live booking calendar to choose from the times BB Detailing has made available.</p></div><div class="step"><div class="num">3</div><h3>Get confirmed</h3><p>Your appointment is added to the schedule. We’ll confirm drop-off details and expected completion timing.</p></div><div class="step"><div class="num">4</div><h3>Pick it up clean</h3><p>We’ll let you know when your vehicle is ready. Payment is due at pickup.</p></div></div>
       </div>
     </section>
 
@@ -110,17 +110,36 @@
 
     <section id="booking" class="booking">
       <div class="wrap">
-        <div class="section-head"><div class="section-kicker">Booking</div><h2>Request your detailing appointment.</h2><p>Submit the form below. Your request isn’t final until BB Detailing confirms the date, time and service.</p></div>
+        <div class="section-head">
+          <div class="section-kicker">Booking</div>
+          <h2>Book from our live availability.</h2>
+          <p>Choose from the times BB Detailing has opened on our live booking calendar. Once a time is booked, it is no longer available to other customers.</p>
+        </div>
         <div class="form-shell">
-          <aside class="booking-info"><h3>Before you book</h3><p>Tell us the real condition of the vehicle. Pet hair, salt, stains and heavier messes take more time — and we want to price the job fairly without rushing the work.</p><div class="mini"><strong>Payment</strong><p>Cash or e-transfer accepted after service.</p><a href="mailto:bbdetailing10@gmail.com">bbdetailing10@gmail.com</a></div><div class="mini"><strong>Mobile service</strong><p>Returning customers, friends/family and approved referrals only.</p></div></aside>
-          <form id="bookingForm">
-            <div class="row"><div><label for="name">Name</label><input id="name" required autocomplete="name" placeholder="Your name"></div><div><label for="phone">Phone</label><input id="phone" type="tel" required autocomplete="tel" placeholder="(555) 555-5555"></div></div>
-            <div class="row"><div><label for="service">Package</label><select id="service" required><option value="">Choose one...</option><option>Fresh Start — $60</option><option>Superior — $80</option><option>Complete Restoration — $100+</option></select></div><div><label for="date">Preferred date</label><input id="date" type="date" required></div></div>
-            <div class="row"><div><label for="vehicle">Vehicle</label><input id="vehicle" required placeholder="2020 Honda Civic"></div><div><label for="method">Service preference</label><select id="method" required><option value="">Choose one...</option><option>Drop-off</option><option>Mobile — returning/referral only</option></select></div></div>
-            <label for="condition">Vehicle condition / anything we should know?</label><textarea id="condition" placeholder="Pet hair, salt stains, food spills, very dirty carpets, vehicle size, etc."></textarea>
-            <button class="btn btn-primary submit" type="submit">Prepare Booking Request</button>
-            <div id="status" class="status"></div>
-          </form>
+          <aside class="booking-info">
+            <h3>Before you book</h3>
+            <p>Please choose the package that best matches your vehicle. Pet hair, salt, stains and heavier messes take more time, so final timing may vary based on the vehicle’s condition.</p>
+            <div class="mini">
+              <strong>Payment</strong>
+              <p>Cash or e-transfer accepted after service.</p>
+              <a href="mailto:bbdetailing10@gmail.com">bbdetailing10@gmail.com</a>
+            </div>
+            <div class="mini">
+              <strong>Mobile service</strong>
+              <p>Returning customers, friends/family and approved referrals only.</p>
+            </div>
+          </aside>
+          <div class="calendar-card">
+            <div class="calendar-icon">📅</div>
+            <h3>See available appointments</h3>
+            <p>Our calendar only shows times that are currently open. Availability changes throughout the season as the kids’ schedule changes.</p>
+            <a class="btn btn-primary calendar-btn" href="https://calendar.app.google/mA8QHgoBSwWcLs3N9" target="_blank" rel="noopener">View Available Times &amp; Book</a>
+            <div class="availability-note">
+              <strong>Don’t see a time that works?</strong>
+              <p>Additional appointments may sometimes be available on blocked days, including Sundays. Email us to check and we’ll let you know what may be possible.</p>
+              <a href="mailto:bbdetailing10@gmail.com">bbdetailing10@gmail.com</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -128,26 +147,5 @@
 
   <footer><div class="wrap footer-grid"><div><div class="footer-brand">BB <span>DETAILING</span></div><div>Clean Cars. Done Right.</div></div><div>Cash or e-transfer • Local drop-off • Mobile by referral</div></div></footer>
 
-  <script>
-    const dateInput=document.getElementById('date');
-    const today=new Date(); const y=today.getFullYear(); const m=String(today.getMonth()+1).padStart(2,'0'); const d=String(today.getDate()).padStart(2,'0');
-    dateInput.min=`${y}-${m}-${d}`;
-
-    document.getElementById('bookingForm').addEventListener('submit',function(e){
-      e.preventDefault();
-      const data={
-        name:document.getElementById('name').value.trim(), phone:document.getElementById('phone').value.trim(),
-        service:document.getElementById('service').value, date:document.getElementById('date').value,
-        vehicle:document.getElementById('vehicle').value.trim(), method:document.getElementById('method').value,
-        condition:document.getElementById('condition').value.trim()
-      };
-      const body=[`Hi BB Detailing,`,``,`I'd like to request an appointment.`,``,`Name: ${data.name}`,`Phone: ${data.phone}`,`Package: ${data.service}`,`Preferred date: ${data.date}`,`Vehicle: ${data.vehicle}`,`Service preference: ${data.method}`,`Vehicle condition/notes: ${data.condition||'None provided'}`,``,`Please confirm availability, timing and final service level. Thanks!`].join('\n');
-      const subject=`Booking Request — ${data.name} — ${data.vehicle}`;
-      const mailto=`mailto:bbdetailing10@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      const status=document.getElementById('status');
-      status.style.display='block'; status.innerHTML='Your request is ready. Your email app should open now. Send the prepared email to complete the request.';
-      window.location.href=mailto;
-    });
-  </script>
 </body>
 </html>
